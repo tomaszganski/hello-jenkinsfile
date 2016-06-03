@@ -1,16 +1,16 @@
 #!groovy
 node {
-    Stage 'Say hello world'
+    stage 'Say hello world'
     sh "echo hello worlds"
 
-    Stage 'Sleep 5'
+    stage 'Sleep 5'
     sleep 5
 
-    Stage 'Update'
+    stage 'Update'
     echo 'update2'
 }
 
-Stage 'Other node'
+stage 'Other node'
 node {
   echo 'other node'
 }
